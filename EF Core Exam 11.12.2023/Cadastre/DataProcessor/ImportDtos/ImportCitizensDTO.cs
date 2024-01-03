@@ -24,7 +24,7 @@ namespace Cadastre.DataProcessor.ImportDtos
         public string BirthDate { get; set; }
 
         [JsonProperty("MaritalStatus")]
-        [RegularExpression(@"^(Unmarried|Married|Divorced|Widowed)\b")]
+        [RegularExpression(@"^(Unmarried|Married|Divorced|Widowed)\b")] //validating enumaration options
         public string MaritalStatus { get; set; }
 
         [JsonProperty("Properties")]
