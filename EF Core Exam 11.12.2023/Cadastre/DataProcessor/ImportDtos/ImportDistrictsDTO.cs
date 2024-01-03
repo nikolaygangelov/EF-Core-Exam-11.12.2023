@@ -9,7 +9,7 @@ namespace Cadastre.DataProcessor.ImportDtos
     {
         [Required]
         [XmlAttribute("Region")]
-        [RegularExpression(@"^(SouthEast|SouthWest|NorthEast|NorthWest)\b")]
+        [RegularExpression(@"^(SouthEast|SouthWest|NorthEast|NorthWest)\b")] //validating enumeration options
         public string Region { get; set; }
 
         [Required]
